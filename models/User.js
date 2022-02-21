@@ -64,7 +64,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
         validate: function(value){
-            var phoneRegex = /\d{1}-\d{3}-\d{3}\d{4}/
+            var phoneRegex = /\d{1}-\d{3}-\d{3}-\d{4}/
             return phoneRegex.test(value)
         }
     },
