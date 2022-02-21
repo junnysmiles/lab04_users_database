@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://junnysmiles:junny1234@fullstack.xy5fk.mongodb.ne
 }).then(success => {
     console.log('Mongodb connection successful!')
 }).catch(err => {
-    console.log('MongoDB Connection ERROR...')
+    console.log('MongoDB Connection ERROR...' + err)
 })
 
 app.use(userRouter)

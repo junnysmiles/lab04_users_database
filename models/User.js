@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 // Geo Schema
 const GeoSchema = new mongoose.Schema({
-    lat: Float32Array,
-    lng: Float32Array
+    lat: String,
+    lng: String
 })
 
 // Address Schema
